@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<style>
+			table {			
+				background: #4169E1;
+			}
+			
+			input {		
+				margin: 0px;
+				padding: 5px;
+				width: 100%;
+				font-size: 1.2em;
+			}
+			
+			.digit {
+				background: #F0E68C;
+			}
+			
+			.operator {
+				background: #7FFF00;
+			}
+			
+			.separator {
+				background: #E31230;
+			}
+			
+			.result-field {			
+				font-size: 1.4em;
+				font-style: italic;
+				text-align: right;
+				background: #FFB6C1;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<table>
+				<thead>
+					<tr>
+						<td colspan="4">
+							<textarea class="result-field">123</textarea>
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="button" class="digit" value="1" />
+						</td>	
+						<td>
+							<input type="button" class="digit" value="2" />
+						</td>
+						<td>
+							<input type="button" class="digit" value="3" />
+						</td>	
+						<td>
+							<input type="button" class="operator" value="+" />
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<input type="button" class="digit" value="4" />
+						</td>	
+						<td>
+							<input type="button" class="digit" value="5" />
+						</td>
+						<td>
+							<input type="button" class="digit" value="6" />
+						</td>	
+						<td>
+							<input type="button" class="operator" value="-" />
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<input type="button" class="digit" value="7" />
+						</td>	
+						<td>
+							<input type="button" class="digit" value="8" />
+						</td>
+						<td>
+							<input type="button" class="digit" value="9" />
+						</td>	
+						<td>
+							<input type="button" class="operator" value="*" />
+						</td>	
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="button" class="digit" value="0" />
+						</td>	
+						<td>
+							<input type="button" class="separator" value="." />
+						</td>
+						<td>
+							<input type="button" class="operator" value="/" />
+						</td>						
+					</tr>
+				</tbody>
+			</table>
+		</form>	
+	</body>
+</html>

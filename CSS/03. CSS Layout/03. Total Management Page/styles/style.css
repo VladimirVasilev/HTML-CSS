@@ -1,0 +1,75 @@
+body div#wrapper {
+	width: 665px;
+	height: 325px;
+	background: #3b3b3b;
+	border-radius: 15px;
+}
+
+body div#wrapper header {
+	background: -moz-linear-gradient(top,  #3b3b3b 0%, #393939 50%, #272727 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b3b3b), color-stop(50%,#393939), color-stop(100%,#272727)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3b3b3b 0%,#393939 50%,#272727 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3b3b3b 0%,#393939 50%,#272727 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3b3b3b 0%,#393939 50%,#272727 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3b3b3b 0%,#393939 50%,#272727 100%); /* W3C */
+	padding-bottom: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+body div#wrapper header form {
+	color: white;
+	font-family: Georgia, serif;
+	font-size: 22px;
+	font-weight: bold;
+	float: right;
+	margin-top: 25px;
+	margin-right: 10px;
+}
+
+form input[type="text"], [type="email"] {
+	margin: 5px;
+}
+
+form input[type="submit"] {
+	background: url("../images/red-button.png")  no-repeat;
+	width: 56px;
+	height: 28px;
+	color: white;
+	border: none;
+	margin-right: 5px;
+	margin-left: 7px;
+	margin-bottom: 15px;
+}
+
+body div#wrapper header img {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+body div#wrapper article {
+	margin-top: -35px;
+}
+
+body div#wrapper article h1 {
+	color: #FFF314;
+	font-size: 35px;	
+	font-weight: normal;
+	padding-top: 20px;
+	margin-left: 10px;
+}
+
+body div#wrapper article p {
+	color: #A7A7A7;
+	font-size: 13px;
+	font-family: Verdana, sans serif;
+	line-height: 18px;
+	width: 600px;
+	margin-top: -15px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+
+#white-text {
+	color: #FFF;
+}

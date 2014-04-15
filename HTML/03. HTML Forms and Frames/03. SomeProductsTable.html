@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Some Products Table</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			table {
+				border: 1px solid black;
+				border-spacing: 0;
+				border-collapse: collapse;
+			}
+
+			thead
+			{
+				background-color: #688571;
+			}
+
+			thead input {
+				margin: 5px;
+			}
+
+			tfoot
+			{
+				background-color: #688571;
+			}
+
+			tbody
+			{
+				background-color: #7CCD7C;
+			}
+
+			td {
+				border: 1px solid black;
+			}
+
+			td.product-name {
+				width: 250px;
+			}
+
+			span#count-items-pages {
+				float: right;
+				padding: 0;
+    			margin: 0;
+    			margin-top: 5px;
+    			margin-right: 5px;
+
+			}
+
+			span#page-size {
+				margin-left: 55px;
+			}			
+
+			.filter-button {
+				background-image: url('imgs/filter.jpg');				
+				background-repeat: no-repeat;				
+				background-position: center;
+				width: 21px;
+				height: 21px;
+				vertical-align: middle;
+			}
+
+			#left-arrow {
+				background-image: url('imgs/left-arrow.jpg');				
+				background-repeat: no-repeat;				
+				background-position: center;
+				width: 21px;
+				height: 21px;
+				vertical-align: middle;
+				margin: 5px;
+			}
+
+			#multy-left-arrow {
+				background-image: url('imgs/multy-left-arrow.jpg');				
+				background-repeat: no-repeat;				
+				background-position: center;
+				width: 21px;
+				height: 21px;
+				vertical-align: middle;
+			}
+
+			#right-arrow {
+				background-image: url('imgs/right-arrow.jpg');				
+				background-repeat: no-repeat;				
+				background-position: center;
+				width: 21px;
+				height: 21px;
+				vertical-align: middle;
+			}
+
+			#multy-right-arrow {
+				background-image: url('imgs/multy-right-arrow.jpg');				
+				background-repeat: no-repeat;				
+				background-position: center;
+				width: 21px;
+				height: 21px;
+				vertical-align: middle;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<td colspan="6">
+						Drag a column header and drop it here to group by that column
+					</td>
+				</tr>
+				<tr>
+					<td>ProductID</td>
+					<td>Product name</td>
+					<td>Unit price</td>
+					<td>Quantity per unit</td>
+					<td>Units in stock</td>
+					<td>Discontinued</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="product-id" size="3"/>
+					</td>
+					<td>
+						<input type="text" name="product-name"/>
+					</td>
+					<td>
+						<input type="text" name="unit-price" size="10"/>
+						<input type="button" class="filter-button" value=" "/>
+					</td>
+					<td>
+						<input type="text" name="quantity-per-unit" size="15"/>
+					</td>
+					<td>
+						<input type="text" name="units-in-stock" size="10"/>
+						<input type="button" class="filter-button" value=" "/>
+					</td>
+					<td>
+						<input type="checkbox" name="discontinued"/>
+						<input type="button" class="filter-button" value=" "/>
+					</td>					
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="6">
+						<input type="button" id="left-arrow" value=" "/>
+						<input type="button" id="multy-left-arrow" value=" "/>
+						<a href="" class="chosen">1</a>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="">4</a>
+						<a href="">5</a>
+						<a href="">6</a>
+						<a href="">7</a>
+						<a href="">8</a>
+						<a href="">9</a>
+						<a href="">10</a>
+						...
+						<input type="button" id="right-arrow" value=" "/>
+						<input type="button" id="multy-right-arrow" value=" "/>			
+						<span id="page-size">Page size:</span>
+						<select name="page">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option selected>10</option>
+						</select>
+						<span id="count-items-pages">335104 items in 33511 pages</span>
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td class="product-name">Chai</td>
+					<td>&#36;18.00</td>
+					<td>10 boxes x 20 bags</td>
+					<td>39</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+				<tr>
+					<td>2</td>
+					<td class="product-name">Chang</td>
+					<td>&#36;19.00</td>
+					<td>24 - 12 oz bottles</td>
+					<td>17</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+				<tr>
+					<td>3</td>
+					<td class="product-name">Aniseed Syrup</td>
+					<td>&#36;10.00</td>
+					<td>12 - 500 ml bottles</td>
+					<td>13</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+				<tr>
+					<td>4</td>
+					<td class="product-name">Chef Anton's Cajun Seasoning</td>
+					<td>&#36;22.00</td>
+					<td>46 - oz bottles</td>
+					<td>53</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+				<tr>
+					<td>5</td>
+					<td class="product-name">Chef Anton's Gubmo Mix</td>
+					<td>&#36;21.35</td>
+					<td>36 boxes</td>
+					<td>0</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" checked="checked" />
+					</td>
+				</tr>	
+				<tr>
+					<td>6</td>
+					<td class="product-name">Chef Anton's Boysenberry Spread</td>
+					<td>&#36;25.00</td>
+					<td>12-8 oz jars</td>
+					<td>120</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+				<tr>
+					<td>7</td>
+					<td class="product-name">Uncle Bobs's Organic Dried Pears</td>
+					<td>&#36;30.00</td>
+					<td>12 - 1 lb pkgs.</td>
+					<td>15</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+				<tr>
+					<td>8</td>
+					<td class="product-name">Northwoods Cranberry Sauce</td>
+					<td>&#36;40.00</td>
+					<td>12 - 12 oz jars</td>
+					<td>6</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+				<tr>
+					<td>9</td>
+					<td class="product-name">Mishi Kobe Niku</td>
+					<td>&#36;97.00</td>
+					<td>18 - 500 g pkgs</td>
+					<td>29</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" checked="checked" />
+					</td>
+				</tr>	
+				<tr>
+					<td>10</td>
+					<td class="product-name">Ikura</td>
+					<td>&#36;31.00</td>
+					<td>12 - 200 ml jars</td>
+					<td>31</td>
+					<td>
+						<input type="checkbox" name="discontinued" disabled="disabled" />
+					</td>
+				</tr>	
+			</tbody>
+		</table>
+	</body>
+</html>
